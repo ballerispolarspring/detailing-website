@@ -1,0 +1,8 @@
+node_modules/
+screenshot.png
+screenshot-mobile.png
+
+# Large original video files (over 100MB limit)
+images/*.MOV
+images/*.mov
+images/*_hq.mp4

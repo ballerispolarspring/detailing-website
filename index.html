@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AD Mobile Auto Detailing | Car Detailing Fairfield & New Haven County CT | 203-910-4246</title>
+
+  <!-- SEO -->
+  <meta name="description" content="AD Mobile Auto Detailing – Professional mobile car detailing serving Fairfield and New Haven Counties, Connecticut. Interior detailing, exterior detailing, paint protection & ceramic coatings. Call Arik Dagan at 203-910-4246." />
+  <meta name="keywords" content="mobile detailing Connecticut, car detailing Fairfield County CT, auto detailing New Haven County, mobile auto detailing CT, ceramic coating Connecticut, paint protection CT, interior detailing Connecticut, exterior detailing CT, car detailing near me, AD Mobile Detailing, Arik Dagan detailing, luxury car detailing CT, mobile car wash Connecticut, detailing Fairfield CT, detailing New Haven CT" />
+  <meta name="author" content="Arik Dagan – AD Mobile Auto Detailing" />
+  <meta name="robots" content="index, follow" />
+  <meta name="geo.region" content="US-CT" />
+  <meta name="geo.placename" content="Fairfield County, New Haven County, Connecticut" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="AD Mobile Auto Detailing | Connecticut" />
+  <meta property="og:description" content="Professional mobile car detailing in Fairfield & New Haven Counties, CT. Interior, exterior, ceramic coatings & paint protection. Call 203-910-4246." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="images/DetailingLogo.png" />
+
+  <!-- Google Local Business Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "AD Mobile Auto Detailing",
+    "description": "Professional mobile car detailing serving Fairfield and New Haven Counties in Connecticut. Services include interior detailing, exterior detailing, paint protection, and ceramic coatings.",
+    "telephone": "203-910-4246",
+    "email": "Daganarik@gmail.com",
+    "founder": "Arik Dagan",
+    "areaServed": [
+      {"@type": "AdministrativeArea", "name": "Fairfield County, Connecticut"},
+      {"@type": "AdministrativeArea", "name": "New Haven County, Connecticut"}
+    ],
+    "serviceType": ["Mobile Auto Detailing", "Interior Car Detailing", "Exterior Car Detailing", "Paint Protection", "Ceramic Coating", "Paint Correction"],
+    "openingHours": "Mo-Su 08:00-20:00",
+    "priceRange": "$$",
+    "sameAs": ["https://www.facebook.com/61575752426316"]
+  }
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#FF3D24',
+            dark: '#000000',
+            'dark-2': '#474747',
+            'dark-3': '#808080',
+          },
+          fontFamily: {
+            roboto: ['Roboto', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Roboto', Arial, Helvetica, sans-serif; background: #000; color: #fff; overflow-x: hidden; }
+
+    /* NAV */
+    .nav-link { transition: color 0.2s; }
+    .nav-link:hover { color: #FF3D24; }
+
+    /* HERO */
+    .hero-bg {
+      position: relative;
+      min-height: 620px;
+      overflow: hidden;
+    }
+    .hero-bg video {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 0;
+    }
+    .hero-bg::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to right, rgba(0,0,0,0.85) 40%, rgba(0,0,0,0.4) 100%);
+      z-index: 1;
+    }
+
+    /* BUTTONS */
+    .btn-red {
+      background: #FF3D24;
+      color: #000;
+      font-weight: 900;
+      font-size: 12px;
+      letter-spacing: 0.1em;
+      padding: 12px 26px;
+      text-transform: uppercase;
+      display: inline-block;
+      transition: background 0.2s, color 0.2s;
+    }
+    .btn-red:hover { background: #fff; color: #000; }
+
+    .btn-outline {
+      border: 2px solid #FF3D24;
+      color: #FF3D24;
+      font-weight: 900;
+      font-size: 12px;
+      letter-spacing: 0.1em;
+      padding: 10px 26px;
+      text-transform: uppercase;
+      display: inline-block;
+      transition: background 0.2s, color 0.2s;
+    }
+    .btn-outline:hover { background: #FF3D24; color: #000; }
+
+    /* SECTION LABEL */
+    .label {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: #FF3D24;
+      margin-bottom: 10px;
+      display: block;
+    }
+
+    /* CARD images */
+    .card-img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      display: block;
+    }
+
+    /* GALLERY */
+    .gallery-img {
+      width: 100%;
+      height: auto;
+      display: block;
+      transition: transform 0.3s;
+    }
+    .gallery-img:hover { transform: scale(1.03); }
+  </style>
+</head>
+<body>
+
+  <!-- ═══ NAV ═══ -->
+  <nav class="bg-black border-b border-gray-800 sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 flex items-center justify-between h-16">
+      <!-- LOGO -->
+      <a href="#home" class="shrink-0 flex items-center gap-2">
+        <img src="images/ModernLogo.png" alt="AD Mobile Auto Detailing" class="h-12 w-auto object-contain" />
+        <span class="text-white font-black uppercase tracking-wide text-xs leading-tight">AD Mobile<br/>Auto Detailing</span>
+      </a>
+      <!-- DESKTOP NAV LINKS -->
+      <ul class="hidden md:flex gap-8 text-xs font-bold uppercase tracking-widest">
+        <li><a href="#home" class="nav-link text-white">Home</a></li>
+        <li><a href="#services" class="nav-link text-white">Services</a></li>
+        <li><a href="#gallery" class="nav-link text-white">Gallery</a></li>
+        <li><a href="#video" class="nav-link text-white">Video</a></li>
+        <li><a href="#mission" class="nav-link text-white">About</a></li>
+        <li><a href="#contact" class="nav-link text-white">Contact</a></li>
+      </ul>
+      <a href="#contact" class="btn-red hidden md:inline-block text-xs">Book Now</a>
+      <!-- HAMBURGER -->
+      <button onclick="toggleMenu()" class="md:hidden flex flex-col gap-1.5 p-2" aria-label="Menu">
+        <span class="block w-6 h-0.5 bg-white"></span>
+        <span class="block w-6 h-0.5 bg-white"></span>
+        <span class="block w-6 h-0.5 bg-white"></span>
+      </button>
+    </div>
+    <!-- MOBILE MENU -->
+    <div id="mobile-menu" class="hidden md:hidden bg-black border-t border-gray-800 px-4 pb-4">
+      <ul class="flex flex-col gap-4 pt-4 text-xs font-bold uppercase tracking-widest">
+        <li><a href="#home" onclick="toggleMenu()" class="nav-link text-white block">Home</a></li>
+        <li><a href="#services" onclick="toggleMenu()" class="nav-link text-white block">Services</a></li>
+        <li><a href="#gallery" onclick="toggleMenu()" class="nav-link text-white block">Gallery</a></li>
+        <li><a href="#video" onclick="toggleMenu()" class="nav-link text-white block">Video</a></li>
+        <li><a href="#mission" onclick="toggleMenu()" class="nav-link text-white block">About</a></li>
+        <li><a href="#contact" onclick="toggleMenu()" class="nav-link text-white block">Contact</a></li>
+        <li><a href="#contact" onclick="toggleMenu()" class="btn-red inline-block mt-2">Book Now</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ═══ HERO ═══ -->
+  <section id="home" class="hero-bg flex items-center">
+    <video autoplay muted loop playsinline>
+      <source src="images/MIZC9599.mp4" type="video/mp4" />
+    </video>
+    <div class="relative z-10 max-w-6xl mx-auto px-6 py-24">
+      <span class="label">Automotive Detailing Services</span>
+      <h1 class="text-3xl md:text-5xl lg:text-6xl font-black uppercase leading-tight text-white max-w-xl mb-8">
+        Professional<br />Automotive<br />Paint Protection<br />&amp; Luxury<br />Detailing
+      </h1>
+      <div class="flex flex-wrap gap-4">
+        <a href="#contact" class="btn-red">Book Now</a>
+        <a href="#services" class="btn-outline">Our Services</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ MOBILE DETAIL ═══ -->
+  <section id="mobile" class="bg-black py-14">
+    <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-stretch gap-0">
+      <div class="md:w-1/2 flex flex-col justify-center pr-0 md:pr-12 py-8">
+        <span class="label">We Come To You</span>
+        <h2 class="text-3xl md:text-4xl font-black uppercase text-white mb-5 leading-tight">Mobile Detail Online</h2>
+        <p class="text-gray-400 text-sm leading-relaxed mb-6">
+          Book our mobile detailing service from the comfort of your home. We bring all the equipment and premium products needed to make your vehicle shine — right at your doorstep.
+        </p>
+        <div>
+          <a href="#contact" class="btn-red">Book Mobile Detail</a>
+        </div>
+      </div>
+      <div class="md:w-1/2">
+        <img src="images/20260413_013752000_iOS.jpg" alt="Mobile detailing in action" class="w-full h-auto" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ PREMIUM DETAILING ═══ -->
+  <section class="bg-black border-t border-gray-900 py-16">
+    <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row gap-12 items-center">
+      <div class="md:w-1/2">
+        <span class="label">Who We Are</span>
+        <h2 class="text-3xl md:text-4xl font-black uppercase text-white mb-6 leading-tight">
+          Premium Detailing Services in Fairfield &amp; New Haven County
+        </h2>
+        <p class="text-gray-400 text-sm leading-relaxed mb-4">
+          At AD Mobile Detailing, we specialize in delivering top-tier automotive care to clients across Fairfield and New Haven Counties. Our team brings years of experience and a passion for perfection to every vehicle we touch.
+        </p>
+        <p class="text-gray-400 text-sm leading-relaxed mb-7">
+          Whether you're looking for a full detail, interior detail, or a ceramic coating, we offer services and packages tailored to meet your needs and exceed your expectations.
+        </p>
+        <a href="#services" class="btn-red">Learn More</a>
+      </div>
+      <div class="md:w-1/2">
+        <img src="images/20260413_013429000_iOS.jpg" alt="Ferrari luxury interior detail" class="w-full h-auto" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ SERVICES ═══ -->
+  <section id="services" class="bg-dark-2 py-16">
+    <div class="max-w-6xl mx-auto px-6">
+      <span class="label text-center block">What We Offer</span>
+      <h2 class="text-3xl md:text-4xl font-black uppercase text-white text-center mb-12">Services at AD Mobile Detailing</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+        <!-- Card 1 -->
+        <div class="bg-black cursor-pointer hover:border hover:border-gray-600 transition-all" onclick="openService('auto')">
+          <img src="images/20260413_013610000_iOS.jpg" alt="Auto Detailing" class="card-img" style="object-position: center center;" />
+          <div class="p-6">
+            <h3 class="text-white font-black uppercase text-base mb-2">Full Detail</h3>
+            <p class="text-gray-400 text-sm leading-relaxed mb-5">Full interior and exterior detailing to restore your vehicle to showroom condition.</p>
+            <span class="btn-red text-xs">Learn More</span>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="bg-black cursor-pointer hover:border hover:border-gray-600 transition-all" onclick="openService('interior')">
+          <img src="images/20260413_013527000_iOS.jpg" alt="Interior Detailing" class="card-img" />
+          <div class="p-6">
+            <h3 class="text-white font-black uppercase text-base mb-2">Interior Detailing</h3>
+            <p class="text-gray-400 text-sm leading-relaxed mb-5">Deep interior cleaning, leather conditioning, and odor elimination for a like-new cabin.</p>
+            <span class="btn-red text-xs">Learn More</span>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="bg-black cursor-pointer hover:border hover:border-gray-600 transition-all" onclick="openService('paint')">
+          <img src="images/20260413_013453000_iOS.jpg" alt="Paint Protection" class="card-img" />
+          <div class="p-6">
+            <h3 class="text-white font-black uppercase text-base mb-2">Paint Protection</h3>
+            <p class="text-gray-400 text-sm leading-relaxed mb-5">Paint correction and ceramic coatings to protect and restore your vehicle's finish.</p>
+            <span class="btn-red text-xs">Learn More</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ GALLERY ═══ -->
+  <section id="gallery" class="bg-black py-16">
+    <div class="max-w-6xl mx-auto px-6">
+      <span class="label text-center block">Our Work</span>
+      <h2 class="text-3xl md:text-4xl font-black uppercase text-white text-center mb-12">Gallery</h2>
+
+      <!-- Carousel -->
+      <div style="position:relative;overflow:hidden;">
+        <!-- Prev -->
+        <button onclick="galPrev()" style="position:absolute;left:0;top:50%;transform:translateY(-50%);z-index:10;background:rgba(0,0,0,0.6);border:none;color:#fff;font-size:40px;padding:8px 14px;cursor:pointer;line-height:1;">&#8249;</button>
+
+        <!-- Track -->
+        <div id="gallery-track" style="display:flex;transition:transform 0.6s ease;">
+
+          <!-- Ferrari with bronze car in background first, Ferrari interior second, Porsche interior third -->
+          <div style="flex:0 0 33.333%;padding:6px;box-sizing:border-box;background:#0a0a0a;"><img src="images/IMG_7085.jpg" onclick="openLightbox('images/IMG_7085.jpg')" class="gallery-img" style="cursor:pointer;height:320px;object-fit:contain;width:100%;background:#0a0a0a;" /></div>
+          <div style="flex:0 0 33.333%;padding:6px;box-sizing:border-box;background:#0a0a0a;"><img src="images/20260413_013429000_iOS.jpg" onclick="openLightbox('images/20260413_013429000_iOS.jpg')" class="gallery-img" style="cursor:pointer;height:320px;object-fit:contain;width:100%;background:#0a0a0a;" /></div>
+          <div style="flex:0 0 33.333%;padding:6px;box-sizing:border-box;background:#0a0a0a;"><img src="images/20260413_013549000_iOS.jpg" onclick="openLightbox('images/20260413_013549000_iOS.jpg')" class="gallery-img" style="cursor:pointer;height:320px;object-fit:contain;width:100%;background:#0a0a0a;" /></div>
+          <div style="flex:0 0 33.333%;padding:6px;box-sizing:border-box;background:#0a0a0a;"><img src="images/20260413_013716000_iOS.jpg" onclick="openLightbox('images/20260413_013716000_iOS.jpg')" class="gallery-img" style="cursor:pointer;height:320px;object-fit:contain;width:100%;background:#0a0a0a;" /></div>
+          <div style="flex:0 0 33.333%;padding:6px;box-sizing:border-box;background:#0a0a0a;"><img src="images/20260413_013740000_iOS.jpg" onclick="openLightbox('images/20260413_013740000_iOS.jpg')" class="gallery-img" style="cursor:pointer;height:320px;object-fit:contain;width:100%;background:#0a0a0a;" /></div>
+          <div style="flex:0 0 33.333%;padding:6px;box-sizing:border-box;background:#0a0a0a;"><img src="images/20260413_013659000_iOS.jpg" onclick="openLightbox('images/20260413_013659000_iOS.jpg')" class="gallery-img" style="cursor:pointer;height:320px;object-fit:contain;width:100%;background:#0a0a0a;" /></div>
+          <div style="flex:0 0 33.333%;padding:6px;box-sizing:border-box;background:#0a0a0a;"><img src="images/20260413_013752000_iOS.jpg" onclick="openLightbox('images/20260413_013752000_iOS.jpg')" class="gallery-img" style="cursor:pointer;height:320px;object-fit:contain;width:100%;background:#0a0a0a;" /></div>
+          <div style="flex:0 0 33.333%;padding:6px;box-sizing:border-box;background:#0a0a0a;"><img src="images/IMG_4224.jpg" onclick="openLightbox('images/IMG_4224.jpg')" class="gallery-img" style="cursor:pointer;height:320px;object-fit:contain;width:100%;background:#0a0a0a;" /></div>
+          <div style="flex:0 0 33.333%;padding:6px;box-sizing:border-box;background:#0a0a0a;"><img src="images/CVAJ0603.JPG" onclick="openLightbox('images/CVAJ0603.JPG')" class="gallery-img" style="cursor:pointer;height:320px;object-fit:contain;width:100%;background:#0a0a0a;" /></div>
+          <div style="flex:0 0 33.333%;padding:6px;box-sizing:border-box;background:#0a0a0a;"><img src="images/IMG_E7185.JPG" onclick="openLightbox('images/IMG_E7185.JPG')" class="gallery-img" style="cursor:pointer;height:320px;object-fit:contain;width:100%;background:#0a0a0a;" /></div>
+          <div style="flex:0 0 33.333%;padding:6px;box-sizing:border-box;background:#0a0a0a;"><img src="images/SPSD4639.JPG" onclick="openLightbox('images/SPSD4639.JPG')" class="gallery-img" style="cursor:pointer;height:320px;object-fit:contain;width:100%;background:#0a0a0a;" /></div>
+          <div style="flex:0 0 33.333%;padding:6px;box-sizing:border-box;background:#0a0a0a;"><img src="images/IMG_0854.jpg" onclick="openLightbox('images/IMG_0854.jpg')" class="gallery-img" style="cursor:pointer;height:320px;object-fit:contain;width:100%;background:#0a0a0a;" /></div>
+          <div style="flex:0 0 33.333%;padding:6px;box-sizing:border-box;background:#0a0a0a;"><img src="images/IMG_0978.jpg" onclick="openLightbox('images/IMG_0978.jpg')" class="gallery-img" style="cursor:pointer;height:320px;object-fit:contain;width:100%;background:#0a0a0a;" /></div>
+          <div style="flex:0 0 33.333%;padding:6px;box-sizing:border-box;background:#0a0a0a;"><img src="images/IMG_1296.jpg" onclick="openLightbox('images/IMG_1296.jpg')" class="gallery-img" style="cursor:pointer;height:320px;object-fit:contain;width:100%;background:#0a0a0a;" /></div>
+          <div style="flex:0 0 33.333%;padding:6px;box-sizing:border-box;background:#0a0a0a;"><img src="images/IMG_4240.jpg" onclick="openLightbox('images/IMG_4240.jpg')" class="gallery-img" style="cursor:pointer;height:320px;object-fit:contain;width:100%;background:#0a0a0a;" /></div>
+          <div style="flex:0 0 33.333%;padding:6px;box-sizing:border-box;background:#0a0a0a;"><img src="images/IMG_1540.jpg" onclick="openLightbox('images/IMG_1540.jpg')" class="gallery-img" style="cursor:pointer;height:320px;object-fit:contain;width:100%;background:#0a0a0a;" /></div>
+          <div style="flex:0 0 33.333%;padding:6px;box-sizing:border-box;background:#0a0a0a;"><img src="images/IMG_4041.jpg" onclick="openLightbox('images/IMG_4041.jpg')" class="gallery-img" style="cursor:pointer;height:320px;object-fit:contain;width:100%;background:#0a0a0a;" /></div>
+          <div style="flex:0 0 33.333%;padding:6px;box-sizing:border-box;background:#0a0a0a;"><img src="images/IMG_4046.jpg" onclick="openLightbox('images/IMG_4046.jpg')" class="gallery-img" style="cursor:pointer;height:320px;object-fit:contain;width:100%;background:#0a0a0a;" /></div>
+          <div style="flex:0 0 33.333%;padding:6px;box-sizing:border-box;background:#0a0a0a;"><img src="images/IMG_4443.jpg" onclick="openLightbox('images/IMG_4443.jpg')" class="gallery-img" style="cursor:pointer;height:320px;object-fit:contain;width:100%;background:#0a0a0a;" /></div>
+          <div style="flex:0 0 33.333%;padding:6px;box-sizing:border-box;background:#0a0a0a;"><img src="images/IMG_4537.jpg" onclick="openLightbox('images/IMG_4537.jpg')" class="gallery-img" style="cursor:pointer;height:320px;object-fit:contain;width:100%;background:#0a0a0a;" /></div>
+          <div style="flex:0 0 33.333%;padding:6px;box-sizing:border-box;background:#0a0a0a;"><img src="images/IMG_6634.jpg" onclick="openLightbox('images/IMG_6634.jpg')" class="gallery-img" style="cursor:pointer;height:320px;object-fit:contain;width:100%;background:#0a0a0a;" /></div>
+          <div style="flex:0 0 33.333%;padding:6px;box-sizing:border-box;background:#0a0a0a;"><img src="images/IMG_6675.jpg" onclick="openLightbox('images/IMG_6675.jpg')" class="gallery-img" style="cursor:pointer;height:320px;object-fit:contain;width:100%;background:#0a0a0a;" /></div>
+          <div style="flex:0 0 33.333%;padding:6px;box-sizing:border-box;background:#0a0a0a;"><img src="images/IMG_6680.jpg" onclick="openLightbox('images/IMG_6680.jpg')" class="gallery-img" style="cursor:pointer;height:320px;object-fit:contain;width:100%;background:#0a0a0a;" /></div>
+          <!-- Videos -->
+          <div style="flex:0 0 33.333%;padding:6px;box-sizing:border-box;background:#0a0a0a;"><video src="images/VFJN5701_hq.mp4" style="width:100%;height:320px;object-fit:contain;display:block;background:#0a0a0a;transform: rotate(90deg);" controls muted playsinline></video></div>
+          <div style="flex:0 0 33.333%;padding:6px;box-sizing:border-box;background:#0a0a0a;"><video src="images/20250709_120647000_iOS_hq.mp4" style="width:100%;height:320px;object-fit:contain;display:block;background:#0a0a0a;" controls muted playsinline></video></div>
+          <div style="flex:0 0 33.333%;padding:6px;box-sizing:border-box;background:#0a0a0a;"><video src="images/20260310_165732000_iOS_hq.mp4" style="width:100%;height:320px;object-fit:contain;display:block;background:#0a0a0a;" controls muted playsinline></video></div>
+          <div style="flex:0 0 33.333%;padding:6px;box-sizing:border-box;background:#0a0a0a;"><video src="images/20260403_145757000_iOS_hq.mp4" style="width:100%;height:320px;object-fit:contain;display:block;background:#0a0a0a;" controls muted playsinline></video></div>
+          <div style="flex:0 0 33.333%;padding:6px;box-sizing:border-box;background:#0a0a0a;"><video src="images/20260403_145917000_iOS_hq.mp4" style="width:100%;height:320px;object-fit:contain;display:block;background:#0a0a0a;" controls muted playsinline></video></div>
+          <div style="flex:0 0 33.333%;padding:6px;box-sizing:border-box;background:#0a0a0a;"><video src="images/IMG_4434_hq.mp4" style="width:100%;height:320px;object-fit:contain;display:block;background:#0a0a0a;" controls muted playsinline></video></div>
+
+        </div>
+
+        <!-- Next -->
+        <button onclick="galNext()" style="position:absolute;right:0;top:50%;transform:translateY(-50%);z-index:10;background:rgba(0,0,0,0.6);border:none;color:#fff;font-size:40px;padding:8px 14px;cursor:pointer;line-height:1;">&#8250;</button>
+      </div>
+
+      <!-- Lightbox -->
+      <div id="lightbox" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.92);z-index:1000;align-items:center;justify-content:center;">
+        <span onclick="closeLightbox()" style="position:absolute;top:20px;right:30px;font-size:40px;color:#fff;cursor:pointer;line-height:1;">&times;</span>
+        <span onclick="prevImage(event)" style="position:absolute;left:20px;font-size:50px;color:#fff;cursor:pointer;user-select:none;padding:10px;">&#8249;</span>
+        <img id="lightbox-img" src="" style="max-width:80vw;max-height:90vh;object-fit:contain;border-radius:8px;" />
+        <span onclick="nextImage(event)" style="position:absolute;right:20px;font-size:50px;color:#fff;cursor:pointer;user-select:none;padding:10px;">&#8250;</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ VIDEO ═══ -->
+  <section id="video" class="bg-dark-2 py-16">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <span class="label text-center block">Stay Connected</span>
+      <h2 class="text-3xl md:text-4xl font-black uppercase text-white mb-10">Latest From Facebook</h2>
+      <div class="flex flex-col lg:flex-row justify-center gap-8 items-start">
+        <!-- Facebook page feed -->
+        <div style="width:100%;max-width:500px;overflow:hidden;">
+          <iframe
+            src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2F61575752426316&tabs=timeline&width=500&height=800&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true"
+            width="500" height="800"
+            style="border:none;overflow:hidden;max-width:100%;"
+            scrolling="no" frameborder="0"
+            allowfullscreen="true"
+            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+          </iframe>
+        </div>
+        <!-- Two individual posts stacked -->
+        <div class="flex flex-col gap-6 w-full" style="max-width:500px;">
+          <div style="width:100%;height:480px;overflow:hidden;">
+            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid0293CgDQZJwKBqkvTXTKc2UMnRL2LGrBUXWKa65YrqTm4HXei35eeFWbeYR6wdS5zjl%26id%3D61575752426316&show_text=true&width=500" width="500" height="630" style="border:none;overflow:hidden;display:block;transform:scale(0.76);transform-origin:top left;max-width:100%;" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+          </div>
+          <div style="width:100%;height:480px;overflow:hidden;">
+            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid02TMVJkks7BzovggiWMJdrUibkRhrujZ1ohxqGWsvsPHVYHKhWA6Wqo8LTg5jsCwLFl%26id%3D61575752426316&show_text=true&width=500" width="500" height="630" style="border:none;overflow:hidden;display:block;transform:scale(0.76);transform-origin:top left;max-width:100%;" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ OUR MISSION ═══ -->
+  <section id="mission" class="bg-black border-t border-gray-900 py-16">
+    <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row gap-12 items-center">
+      <div class="md:w-2/3">
+        <span class="label">Who We Are</span>
+        <h2 class="text-3xl md:text-4xl font-black uppercase text-white mb-6">Our Mission</h2>
+        <p class="text-gray-400 text-sm leading-relaxed mb-4">
+          My name is Arik Dagan. I am a junior at Elms College and a college basketball player who understands the value of discipline, consistency, and hard work. I started this business with a simple goal: deliver high-quality results and take pride in every job.
+        </p>
+        <p class="text-gray-400 text-sm leading-relaxed">
+          I focus on attention to detail, using the right products, and making sure every vehicle looks its best. This is not just something I do on the side. I take it seriously and treat every car like it is my own.
+        </p>
+      </div>
+      <div class="md:w-1/3 flex justify-center">
+        <img src="images/Headshot.webp" alt="Arik Dagan" class="rounded-full w-56 h-56 object-cover border-4 border-primary" style="object-position: center top;" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ REVIEWS ═══ -->
+  <section class="bg-dark-2 border-t border-gray-900 py-16">
+    <div class="max-w-6xl mx-auto px-6">
+      <span class="label text-center block mb-3">What Clients Say</span>
+      <div class="flex items-center justify-center gap-3 mb-12">
+        <h2 class="text-3xl md:text-4xl font-black uppercase text-white">50+ Five Star Reviews</h2>
+        <div class="flex gap-1">
+          <span style="color:#f59e0b;font-size:22px;">★★★★★</span>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+        <!-- Review 1 -->
+        <a href="https://share.google/SrYM2eISmMEu4K4oQ" target="_blank" class="bg-black border border-gray-800 rounded-lg p-6 flex flex-col gap-4 hover:border-gray-600 transition-colors no-underline" style="text-decoration:none;">
+          <div class="flex items-center justify-between">
+            <div class="flex gap-1 text-yellow-400 text-lg">★★★★★</div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 48 48"><path fill="#4285F4" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#34A853" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#EA4335" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/><path fill="none" d="M0 0h48v48H0z"/></svg>
+          </div>
+          <p class="text-gray-400 text-sm leading-relaxed flex-1">"Arik worked on two of our cars this summer — one an SUV and the other a compact hatchback. He was extremely responsive, polite, cooperative, and responsible. He arrived on time, worked efficiently and detailed our cars beautifully. His prices are reasonable. Highly recommend this hard-working entrepreneur!"</p>
+          <div>
+            <p class="text-white font-bold text-sm">Allison A.</p>
+            <p class="text-gray-600 text-xs">37 weeks ago · Google Review</p>
+          </div>
+        </a>
+
+        <!-- Review 2 -->
+        <a href="https://share.google/SrYM2eISmMEu4K4oQ" target="_blank" class="bg-black border border-gray-800 rounded-lg p-6 flex flex-col gap-4 hover:border-gray-600 transition-colors" style="text-decoration:none;">
+          <div class="flex items-center justify-between">
+            <div class="flex gap-1 text-yellow-400 text-lg">★★★★★</div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 48 48"><path fill="#4285F4" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#34A853" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#EA4335" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/><path fill="none" d="M0 0h48v48H0z"/></svg>
+          </div>
+          <p class="text-gray-400 text-sm leading-relaxed flex-1">"I highly recommend Arik. He is very professional and responsive. He provided excellent communication and follow up, accommodated our busy schedule, and completed the work in a timely manner. I was impressed with his quality of work and attention to detail. I plan on using Arik again for all our future detailing needs."</p>
+          <div>
+            <p class="text-white font-bold text-sm">Rob Rottman</p>
+            <p class="text-gray-600 text-xs">40 weeks ago · Google Review</p>
+          </div>
+        </a>
+
+        <!-- Review 3 -->
+        <a href="https://share.google/SrYM2eISmMEu4K4oQ" target="_blank" class="bg-black border border-gray-800 rounded-lg p-6 flex flex-col gap-4 hover:border-gray-600 transition-colors" style="text-decoration:none;">
+          <div class="flex items-center justify-between">
+            <div class="flex gap-1 text-yellow-400 text-lg">★★★★★</div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 48 48"><path fill="#4285F4" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#34A853" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#EA4335" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/><path fill="none" d="M0 0h48v48H0z"/></svg>
+          </div>
+          <p class="text-gray-400 text-sm leading-relaxed flex-1">"Arik was timely, professional, and extremely accommodating. His work is some of the best I've ever seen regarding detailing a vehicle. I drive a Genesis GV70 and it looks brand new. Highly recommend!"</p>
+          <div>
+            <p class="text-white font-bold text-sm">Kimberly Yagovane</p>
+            <p class="text-gray-600 text-xs">42 weeks ago · Google Review</p>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ CONTACT / BOOK ═══ -->
+  <section id="contact" class="bg-dark-2 py-16">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <span class="label text-center block">Get In Touch</span>
+      <h2 class="text-3xl md:text-4xl font-black uppercase text-white mb-4">Book Your Detail</h2>
+      <p class="text-gray-400 text-sm mb-10">Fill out the form below and we'll get back to you within 24 hours to confirm your appointment.</p>
+      <form class="grid grid-cols-1 md:grid-cols-2 gap-4 text-left" onsubmit="handleSubmit(event)">
+        <div>
+          <label class="block text-xs font-bold uppercase tracking-widest text-gray-400 mb-2">First Name</label>
+          <input type="text" placeholder="John" required class="w-full bg-black border border-gray-700 text-white text-sm px-4 py-3 focus:outline-none focus:border-primary" />
+        </div>
+        <div>
+          <label class="block text-xs font-bold uppercase tracking-widest text-gray-400 mb-2">Last Name</label>
+          <input type="text" placeholder="Doe" required class="w-full bg-black border border-gray-700 text-white text-sm px-4 py-3 focus:outline-none focus:border-primary" />
+        </div>
+        <div>
+          <label class="block text-xs font-bold uppercase tracking-widest text-gray-400 mb-2">Phone</label>
+          <input type="tel" placeholder="(555) 000-0000" required class="w-full bg-black border border-gray-700 text-white text-sm px-4 py-3 focus:outline-none focus:border-primary" />
+        </div>
+        <div>
+          <label class="block text-xs font-bold uppercase tracking-widest text-gray-400 mb-2">Email</label>
+          <input type="email" placeholder="john@email.com" required class="w-full bg-black border border-gray-700 text-white text-sm px-4 py-3 focus:outline-none focus:border-primary" />
+        </div>
+        <div>
+          <label class="block text-xs font-bold uppercase tracking-widest text-gray-400 mb-3">Service</label>
+          <div class="flex flex-col gap-3">
+            <label class="flex items-center gap-3 cursor-pointer">
+              <input type="checkbox" name="service" value="Full Detail" class="w-4 h-4 accent-red-600" />
+              <span class="text-white text-sm">Full Detail</span>
+            </label>
+            <label class="flex items-center gap-3 cursor-pointer">
+              <input type="checkbox" name="service" value="Interior Detailing" class="w-4 h-4 accent-red-600" />
+              <span class="text-white text-sm">Interior Detailing</span>
+            </label>
+            <label class="flex items-center gap-3 cursor-pointer">
+              <input type="checkbox" name="service" value="Paint Protection" class="w-4 h-4 accent-red-600" />
+              <span class="text-white text-sm">Paint Protection</span>
+            </label>
+            <label class="flex items-center gap-3 cursor-pointer">
+              <input type="checkbox" name="service" value="Other" class="w-4 h-4 accent-red-600" />
+              <span class="text-white text-sm">Other</span>
+            </label>
+          </div>
+        </div>
+        <div>
+          <label class="block text-xs font-bold uppercase tracking-widest text-gray-400 mb-2">Vehicle</label>
+          <input type="text" placeholder="Year, Make, Model" class="w-full bg-black border border-gray-700 text-white text-sm px-4 py-3 focus:outline-none focus:border-primary" />
+        </div>
+        <div class="md:col-span-2">
+          <label class="block text-xs font-bold uppercase tracking-widest text-gray-400 mb-2">Message</label>
+          <textarea rows="4" placeholder="Tell us about your vehicle or any specific needs..." class="w-full bg-black border border-gray-700 text-white text-sm px-4 py-3 focus:outline-none focus:border-primary resize-none"></textarea>
+        </div>
+        <div class="md:col-span-2 text-center">
+          <button type="submit" class="btn-red px-16">Send Request</button>
+        </div>
+      </form>
+      <div id="success-msg" class="hidden mt-6 text-primary font-bold text-sm uppercase tracking-widest">
+        ✓ Request sent! We'll be in touch within 24 hours.
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer class="bg-black border-t border-gray-800 pt-12 pb-6">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-10">
+
+        <div>
+          <div class="mb-4">
+            <img src="images/ModernLogo.png" alt="AD Mobile Auto Detailing" class="h-64 w-auto" />
+          </div>
+          <p class="text-gray-500 text-xs leading-relaxed">Professional Automotive Paint Protection &amp; Luxury Detailing serving Fairfield &amp; New Haven Counties.</p>
+        </div>
+
+        <div>
+          <h4 class="text-white font-bold uppercase text-xs tracking-widest mb-4">Servicing</h4>
+          <p class="text-gray-400 text-xs leading-relaxed">Fairfield &amp; New Haven Counties<br />Connecticut, USA</p>
+        </div>
+
+        <div>
+          <h4 class="text-white font-bold uppercase text-xs tracking-widest mb-4">Contact</h4>
+          <p class="text-gray-400 text-xs mb-1">Phone: <a href="tel:2039104246" class="hover:text-primary">203-910-4246</a></p>
+          <p class="text-gray-400 text-xs mb-5">Email: <a href="mailto:Daganarik@gmail.com" class="hover:text-primary">Daganarik@gmail.com</a></p>
+          <div class="flex gap-3">
+            <!-- Facebook -->
+            <a href="https://www.facebook.com/profile.php?id=61575752426316" target="_blank" class="w-9 h-9 bg-gray-800 flex items-center justify-center hover:bg-gray-700 transition-colors rounded">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="#1877F2"><path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.41c0-3.025 1.792-4.697 4.533-4.697 1.312 0 2.686.235 2.686.235v2.97h-1.513c-1.491 0-1.956.93-1.956 1.874v2.25h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z"/></svg>
+            </a>
+            <!-- Instagram -->
+            <a href="https://www.instagram.com/admobileautodetailing/" target="_blank" class="w-9 h-9 bg-gray-800 flex items-center justify-center hover:bg-gray-700 transition-colors rounded">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="url(#ig-grad)">
+                <defs>
+                  <linearGradient id="ig-grad" x1="0%" y1="100%" x2="100%" y2="0%">
+                    <stop offset="0%" style="stop-color:#f09433"/>
+                    <stop offset="25%" style="stop-color:#e6683c"/>
+                    <stop offset="50%" style="stop-color:#dc2743"/>
+                    <stop offset="75%" style="stop-color:#cc2366"/>
+                    <stop offset="100%" style="stop-color:#bc1888"/>
+                  </linearGradient>
+                </defs>
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.334 3.608 1.308.975.975 1.246 2.242 1.308 3.608.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.062 1.366-.334 2.633-1.308 3.608-.975.975-2.242 1.246-3.608 1.308-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-2.633-.334-3.608-1.308-.975-.975-1.246-2.242-1.308-3.608C2.175 15.584 2.163 15.204 2.163 12s.012-3.584.07-4.85c.062-1.366.334-2.633 1.308-3.608.975-.975 2.242-1.246 3.608-1.308C8.416 2.175 8.796 2.163 12 2.163zm0-2.163C8.741 0 8.332.014 7.052.072 5.197.157 3.355.673 2.014 2.014.673 3.355.157 5.197.072 7.052.014 8.332 0 8.741 0 12c0 3.259.014 3.668.072 4.948.085 1.855.601 3.697 1.942 5.038 1.341 1.341 3.183 1.857 5.038 1.942C8.332 23.986 8.741 24 12 24s3.668-.014 4.948-.072c1.855-.085 3.697-.601 5.038-1.942 1.341-1.341 1.857-3.183 1.942-5.038.058-1.28.072-1.689.072-4.948s-.014-3.668-.072-4.948c-.085-1.855-.601-3.697-1.942-5.038C20.645.673 18.803.157 16.948.072 15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zm0 10.162a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/>
+              </svg>
+            </a>
+            <!-- TikTok -->
+            <a href="https://www.tiktok.com/@admobileautodetailing" target="_blank" class="w-9 h-9 bg-gray-800 flex items-center justify-center hover:bg-gray-700 transition-colors rounded">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="#ffffff"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.78 1.52V6.75a4.85 4.85 0 0 1-1.01-.06z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="text-white font-bold uppercase text-xs tracking-widest mb-4">Opening Hours</h4>
+          <ul class="text-gray-400 text-xs space-y-2">
+            <li class="flex justify-between gap-4"><span>Mon – Sun</span><span>8:00 AM – 8:00 PM</span></li>
+          </ul>
+        </div>
+
+      </div>
+      <div class="border-t border-gray-800 pt-6 flex flex-col md:flex-row items-center justify-between gap-3">
+        <p class="text-gray-600 text-xs">&copy; 2026 AD Mobile Detailing – Arik Dagan. All rights reserved.</p>
+        <a href="#contact" class="btn-red text-xs">Book Now</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ═══ SERVICE MODALS ═══ -->
+  <div id="service-modal" onclick="closeService(event)" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.85);z-index:1000;align-items:center;justify-content:center;padding:24px;">
+    <div id="service-modal-box" onclick="event.stopPropagation()" style="background:#0e1118;border:1px solid #1e2433;border-radius:16px;max-width:560px;width:100%;padding:40px;position:relative;">
+      <span onclick="closeService()" style="position:absolute;top:16px;right:20px;font-size:28px;color:#6b7587;cursor:pointer;line-height:1;">&times;</span>
+      <p id="modal-label" style="font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#e53e3e;margin-bottom:8px;"></p>
+      <h3 id="modal-title" style="font-size:24px;font-weight:900;color:#fff;text-transform:uppercase;margin-bottom:16px;"></h3>
+      <p id="modal-desc" style="font-size:14px;color:#8892a4;line-height:1.75;margin-bottom:24px;"></p>
+      <ul id="modal-list" style="list-style:none;display:flex;flex-direction:column;gap:10px;margin-bottom:28px;"></ul>
+      <p style="font-size:12px;color:#3a4255;margin-bottom:20px;">Pricing varies by vehicle size and condition. Contact us for a free quote.</p>
+      <a href="#contact" onclick="closeService()" class="btn-red">Book Now</a>
+    </div>
+  </div>
+
+  <script>
+    const services = {
+      auto: {
+        label: 'Full Detail',
+        title: 'Full Detail',
+        desc: 'A complete top-to-bottom detail that restores your vehicle inside and out to showroom condition. Perfect for regular maintenance or getting your car ready for a special occasion.',
+        items: ['Deep clean & condition leather', 'Deep clean floor mats', 'Vacuum carpets', 'Clean all windows', 'UV protection on all surfaces', 'Steam cleaning', 'Exterior wash & wax', 'Deep clean tires & wheels', 'Tire shine']
+      },
+      interior: {
+        label: 'Interior Detailing',
+        title: 'Interior Detailing',
+        desc: 'A deep clean of every surface inside your vehicle. We go beyond a standard clean to leave your cabin looking and smelling brand new.',
+        items: ['Full vacuum of seats, carpets & trunk', 'Leather cleaning & conditioning', 'Dashboard & console detail', 'Door panel & cup holder clean', 'Steam cleaning']
+      },
+      paint: {
+        label: 'Paint Protection',
+        title: 'Paint Protection',
+        desc: 'Protect and restore your vehicle\'s finish with professional paint correction and long-lasting ceramic coating packages.',
+        items: ['Paint correction', '3-year ceramic coating', '5-year ceramic coating', '7-year ceramic coating']
+      }
+    };
+
+    function openService(key) {
+      const s = services[key];
+      document.getElementById('modal-label').textContent = s.label;
+      document.getElementById('modal-title').textContent = s.title;
+      document.getElementById('modal-desc').textContent = s.desc;
+      const list = document.getElementById('modal-list');
+      list.innerHTML = s.items.map(i => `
+        <li style="display:flex;align-items:center;gap:10px;font-size:13px;color:#c0c8d8;">
+          <span style="color:#e53e3e;font-size:16px;">✓</span> ${i}
+        </li>`).join('');
+      document.getElementById('service-modal').style.display = 'flex';
+    }
+
+    function closeService(e) {
+      document.getElementById('service-modal').style.display = 'none';
+    }
+
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') closeService();
+    });
+
+    function toggleMenu() {
+      const menu = document.getElementById('mobile-menu');
+      menu.classList.toggle('hidden');
+    }
+
+    function handleSubmit(e) {
+      e.preventDefault();
+      document.getElementById('success-msg').classList.remove('hidden');
+      e.target.reset();
+      e.target.style.display = 'none';
+    }
+
+    const galleryImages = [
+      'images/20260413_013429000_iOS.jpg',
+      'images/20260413_013600000_iOS.jpg',
+      'images/20260413_013659000_iOS.jpg',
+      'images/20260413_013716000_iOS.jpg',
+      'images/20260413_013740000_iOS.jpg',
+      'images/20260413_013752000_iOS.jpg',
+      'images/CVAJ0603.JPG',
+      'images/IMG_E7185.JPG',
+      'images/SPSD4639.JPG',
+      'images/IMG_0854.jpg',
+      'images/IMG_0978.jpg',
+      'images/IMG_1296.jpg',
+      'images/IMG_1540.jpg',
+      'images/IMG_4041.jpg',
+      'images/IMG_4046.jpg',
+      'images/IMG_4224.jpg',
+      'images/IMG_4240.jpg',
+      'images/IMG_4443.jpg',
+      'images/IMG_4537.jpg',
+      'images/IMG_6634.jpg',
+      'images/IMG_6675.jpg',
+      'images/IMG_6680.jpg',
+      'images/IMG_7085.jpg'
+    ];
+
+    // Carousel
+    let galIdx = 0;
+    const galTotal = 30; // 23 photos + 7 videos
+    const galPerView = 3;
+    const galMax = galTotal - galPerView;
+
+    function galMove(animate) {
+      const track = document.getElementById('gallery-track');
+      track.style.transition = animate ? 'transform 0.6s ease' : 'none';
+      track.style.transform = 'translateX(-' + (galIdx * (100 / galPerView)) + '%)';
+    }
+
+    function galNext() {
+      galIdx = galIdx >= galMax ? 0 : galIdx + 1;
+      galMove(true);
+    }
+
+    function galPrev() {
+      galIdx = galIdx <= 0 ? galMax : galIdx - 1;
+      galMove(true);
+    }
+
+    // Auto-advance every 4 seconds
+    setInterval(galNext, 4000);
+    let currentIndex = 0;
+
+    function openLightbox(src) {
+      currentIndex = galleryImages.indexOf(src);
+      document.getElementById('lightbox-img').src = src;
+      document.getElementById('lightbox').style.display = 'flex';
+    }
+
+    function closeLightbox() {
+      document.getElementById('lightbox').style.display = 'none';
+    }
+
+    function prevImage(e) {
+      e.stopPropagation();
+      currentIndex = (currentIndex - 1 + galleryImages.length) % galleryImages.length;
+      document.getElementById('lightbox-img').src = galleryImages[currentIndex];
+    }
+
+    function nextImage(e) {
+      e.stopPropagation();
+      currentIndex = (currentIndex + 1) % galleryImages.length;
+      document.getElementById('lightbox-img').src = galleryImages[currentIndex];
+    }
+
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') closeLightbox();
+      if (e.key === 'ArrowLeft') prevImage(e);
+      if (e.key === 'ArrowRight') nextImage(e);
+    });
+  </script>
+
+</body>
+</html>
