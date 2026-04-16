@@ -1000,13 +1000,11 @@
       document.getElementById('lightbox-img').src = galleryImages[currentIndex];
     }
 
-    // Load hero video on desktop only
-    if (window.innerWidth >= 768) {
-      const video = document.getElementById('hero-video');
-      video.querySelectorAll('source').forEach(s => { s.src = s.dataset.src; });
-      video.load();
-      video.play();
-    }
+    // Load hero video on all devices
+    const video = document.getElementById('hero-video');
+    video.querySelectorAll('source').forEach(s => { s.src = s.dataset.src; });
+    video.load();
+    video.play();
 
     // Lazy load Facebook iframes when scrolled into view
     const iframeObserver = new IntersectionObserver((entries) => {
