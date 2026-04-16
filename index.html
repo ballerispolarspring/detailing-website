@@ -308,8 +308,8 @@
 
   <!-- ═══ HERO ═══ -->
   <section id="home" class="hero-bg flex items-center">
-    <video autoplay muted loop playsinline>
-      <source src="images/MIZC9599.mp4" type="video/mp4" />
+    <video id="hero-video" muted loop playsinline poster="images/20260413_013610000_iOS.jpg" preload="none">
+      <source data-src="images/MIZC9599.mp4" type="video/mp4" />
     </video>
     <div class="relative z-10 max-w-6xl mx-auto px-6 py-24">
       <span class="label">Automotive Detailing Services</span>
@@ -514,7 +514,7 @@
         <!-- Facebook page feed -->
         <div style="width:100%;max-width:600px;overflow:hidden;">
           <iframe
-            src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2F61575752426316&tabs=timeline&width=600&height=800&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true"
+            data-src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2F61575752426316&tabs=timeline&width=600&height=800&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true"
             width="600" height="800"
             style="border:none;overflow:hidden;max-width:100%;"
             scrolling="no" frameborder="0"
@@ -525,10 +525,10 @@
         <!-- Two individual posts stacked -->
         <div class="flex flex-col w-full" style="max-width:500px;gap:0;">
           <div style="width:100%;height:490px;overflow:hidden;">
-            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid0293CgDQZJwKBqkvTXTKc2UMnRL2LGrBUXWKa65YrqTm4HXei35eeFWbeYR6wdS5zjl%26id%3D61575752426316&show_text=true&width=500" width="500" height="700" style="border:none;overflow:hidden;display:block;transform:scale(0.76);transform-origin:top center;max-width:100%;" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+            <iframe data-src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid0293CgDQZJwKBqkvTXTKc2UMnRL2LGrBUXWKa65YrqTm4HXei35eeFWbeYR6wdS5zjl%26id%3D61575752426316&show_text=true&width=500" width="500" height="700" style="border:none;overflow:hidden;display:block;transform:scale(0.76);transform-origin:top center;max-width:100%;" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
           </div>
           <div style="width:100%;height:490px;overflow:hidden;">
-            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid02TMVJkks7BzovggiWMJdrUibkRhrujZ1ohxqGWsvsPHVYHKhWA6Wqo8LTg5jsCwLFl%26id%3D61575752426316&show_text=true&width=500" width="500" height="700" style="border:none;overflow:hidden;display:block;transform:scale(0.76);transform-origin:top center;max-width:100%;" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+            <iframe data-src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid02TMVJkks7BzovggiWMJdrUibkRhrujZ1ohxqGWsvsPHVYHKhWA6Wqo8LTg5jsCwLFl%26id%3D61575752426316&show_text=true&width=500" width="500" height="700" style="border:none;overflow:hidden;display:block;transform:scale(0.76);transform-origin:top center;max-width:100%;" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
           </div>
         </div>
       </div>
@@ -999,6 +999,29 @@
       currentIndex = (currentIndex + 1) % galleryImages.length;
       document.getElementById('lightbox-img').src = galleryImages[currentIndex];
     }
+
+    // Load hero video on desktop only
+    if (window.innerWidth >= 768) {
+      const video = document.getElementById('hero-video');
+      video.querySelectorAll('source').forEach(s => { s.src = s.dataset.src; });
+      video.load();
+      video.play();
+    }
+
+    // Lazy load Facebook iframes when scrolled into view
+    const iframeObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const iframe = entry.target;
+          iframe.src = iframe.dataset.src;
+          iframeObserver.unobserve(iframe);
+        }
+      });
+    }, { rootMargin: '200px' });
+
+    document.querySelectorAll('iframe[data-src]').forEach(iframe => {
+      iframeObserver.observe(iframe);
+    });
 
     function toggleFaq(btn) {
       const answer = btn.nextElementSibling;
