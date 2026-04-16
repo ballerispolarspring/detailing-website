@@ -650,9 +650,11 @@
       const res = await fetch('https://api.web3forms.com/submit', { method: 'POST', body: data });
       const json = await res.json();
       if (json.success) {
-        document.getElementById('success-msg').classList.remove('hidden');
+        const msg = document.getElementById('success-msg');
+        msg.classList.remove('hidden');
         form.reset();
         form.style.display = 'none';
+        msg.scrollIntoView({ behavior: 'smooth', block: 'center' });
       } else {
         btn.textContent = 'Send Request';
         btn.disabled = false;
